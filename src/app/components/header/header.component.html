@@ -12,7 +12,7 @@
 			</ul>
 		</nav>
 
-		<nav *ngIf="isAuth; else isNotAuth" class="justify-end flex">
+		<nav *ngIf="this.authService.isAuthSignal(); else isNotAuth" class="justify-end flex">
 			<ul class="flex gap-5 items-center">
 				<li class="text-white/50">
 					<a routerLink="#" routerLinkActive="text-white">Profile</a>
@@ -30,7 +30,7 @@
 <ng-template #isNotAuth>
 	<ul class="flex gap-4 items-center ml-auto">
 		<li class="text-white/50">
-			<a routerLink="#" routerLinkActive="text-white">login</a>
+			<a routerLink="login" routerLinkActive="text-white">login</a>
 		</li>
 		<li class="text-white/50">
 			<button class="flex">

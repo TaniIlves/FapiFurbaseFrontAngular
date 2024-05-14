@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { faArrowRightFromBracket } from '@fortawesome/free-solid-svg-icons';
+import { AuthService } from '../../services/auth.service';
 
 @Component({
   selector: 'app-header',
@@ -7,6 +8,8 @@ import { faArrowRightFromBracket } from '@fortawesome/free-solid-svg-icons';
   styleUrl: './header.component.scss'
 })
 export class HeaderComponent {
-  isAuth = true;
+  // isAuth = true;
   logoutIcon = faArrowRightFromBracket;
+
+  constructor(public authService: AuthService) { }
 }
