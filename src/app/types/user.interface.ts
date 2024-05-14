@@ -8,7 +8,8 @@ export interface IUserSignUp {
 
 export interface IUserLogin {
     username: string, 
-    password: string
+    password: string,
+    [key: string]: string
 }
 
 export interface IToken {

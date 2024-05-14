@@ -50,12 +50,13 @@ export class AuthService {
 
   login(userData: IUserLogin) {
 
-    let params = new HttpParams();
-    for (const key in userData) {
-      if (userData.hasOwnProperty(key)) {
-        params = params.append(key, userData[key as keyof IUserLogin]);
-      }
-    }
+    // let params = new HttpParams();
+    // for (const key in userData) {
+    //   if (userData.hasOwnProperty(key)) {
+    //     params = params.append(key, userData[key as keyof IUserLogin]);
+    //   }
+    // }
+    const params = new HttpParams({ fromObject: userData });
 
 
     const headers = new HttpHeaders({
