@@ -17,6 +17,8 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { LoginComponent } from './pages/login/login.component';
 import { SignupComponent } from './pages/signup/signup.component';
 import { AuthInterceptor } from './interceptors/auth.interceptor';
+import { ProfileComponent } from './pages/profile/profile.component';
+import { AccessDeniedComponent } from './pages/access-denied/access-denied.component';
 
 
 
@@ -30,7 +32,9 @@ import { AuthInterceptor } from './interceptors/auth.interceptor';
     HomeComponent,
     AboutComponent,
     LoginComponent,
-    SignupComponent
+    SignupComponent,
+    ProfileComponent,
+    AccessDeniedComponent
   ],
   imports: [
     BrowserModule,

@@ -17,3 +17,9 @@ export interface IToken {
     refresh_token: string
     tokenType: string
 }
+
+export interface IUser {
+    id: number
+    username: string
+    roles: string[]
+}
